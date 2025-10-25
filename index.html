@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  
 </head>
 <body>
 
@@ -61,7 +62,9 @@
   <section id="about">
     <h2>About Me</h2>
     <div class="about">
+      <div class="about-image">
       <img src="assets/about.webp" alt="Jaya Jaiswal" loading="lazy">
+      </div>
       <div class="text">
         <p>Hello! I am <strong>Jaya Jaiswal</strong>, the lead makeup artist at JJ Makeup Studio & Academy. With years of experience, I specialize in bridal, party, and editorial makeup. My mission is to make every client feel confident, beautiful, and camera-ready.</p>
       </div>
@@ -80,6 +83,10 @@
       <img src="assets/makeup/makeup2.webp" alt="Makeup 2" loading="lazy">
       <img src="assets/makeup/makeup3.webp" alt="Makeup 3" loading="lazy">
       <img src="assets/makeup/makeup4.webp" alt="Makeup 4" loading="lazy">
+      <img src="assets/makeup/makeup5.webp" alt="Makeup 5" loading="lazy">
+      <img src="assets/makeup/makeup6.webp" alt="Makeup 6" loading="lazy">
+      <img src="assets/makeup/makeup7.webp" alt="Makeup 7" loading="lazy">
+      <img src="assets/makeup/makeup8.webp" alt="Makeup 8" loading="lazy">
     </div>
     <div id="academy" class="portfolio-grid" style="display:none;">
       <img src="assets/academy/academy1.webp" alt="Academy 1" loading="lazy">
@@ -96,11 +103,14 @@
   <section id="services">
     <h2>Makeup Studio Services</h2>
     <div class="cards-grid">
-      <div class="card"><h3>Bridal Makeup</h3><p>Customized bridal makeup for a perfect wedding day look.</p></div>
-      <div class="card"><h3>Party & Event Makeup</h3><p>Glamorous looks for parties, events, and celebrations.</p></div>
-      <div class="card"><h3>Editorial & Fashion Makeup</h3><p>Creative and high-fashion makeup for shoots and campaigns.</p></div>
-      <div class="card"><h3>Photo Shoot Makeup</h3><p>Professional makeup for portraits, fashion, and portfolio shoots.</p></div>
-      <div class="card"><h3>Makeup Consultation</h3><p>Get advice on skin care, makeup products, and personal style.</p></div>
+      <div class="card"><h3>👰‍♀️Bridal Makeup</h3><p>Experience a flawless, customized bridal look that enhances your natural beauty and lasts throughout your special day.</p></div>
+      <div class="card"><h3>💍Engagement Makeup</h3><p>Look radiant and picture-perfect for your engagement with a makeup style that complements your outfit and occasion.</p></div>
+      <div class="card"><h3>🌼Haldi Mehendi Makeup</h3><p>Fresh, vibrant, and long-lasting looks tailored for your pre-wedding celebrations.</p></div>
+      <div class="card"><h3>💨Airbrush Makeup</h3><p>Enjoy a lightweight, seamless, and camera-ready finish with our advanced airbrush makeup technique.</p></div>
+      <div class="card"><h3>🎉Party & Event Makeup</h3><p>Glamorous and elegant looks designed to make you stand out at any event or celebration.</p></div>
+      <div class="card"><h3>👠Editorial & Fashion Makeup</h3><p>Bold, creative, and high-fashion makeup crafted for editorial shoots, runway shows, and campaigns.</p></div>
+      <div class="card"><h3>📸Photo Shoot Makeup</h3><p>Professional makeup for portfolio, fashion, or portrait photography — enhancing your features for the perfect shot.</p></div>
+      <div class="card"><h3>💄Makeup Consultation</h3><p>Personalized guidance on skincare, makeup products, and beauty routines tailored to your unique style.</p></div>
     </div>
   </section>
 
@@ -159,7 +169,7 @@
 
   <!-- Contact -->
   <section id="contact">
-    <h2>Contact Me</h2>
+    <h2>Contact Us</h2>
     <div class="contact-info">
       <p><i class="fa fa-map-marker-alt"></i> <strong>Address:</strong> Manjhanpur - Sirathu Rd, near Pani Tanki, Sirathu, Uttar Pradesh 212217</p>
   <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> @jjmakeupstudio1</p>
@@ -176,7 +186,7 @@
 
     </form>
 	<div class="whatsapp-button-container">
-  <a href="https://wa.me/919839989256?text=Hello%20Admin,%20I%20want%20to%20inquire%20about%20makeup%20services" target="_blank">
+  <a href="https://wa.me/919839989256?text=Hello%20Ma'am,%20I%20would%20like%20to%20inquire%20about%20your%20makeup%20services." target="_blank">
     <button class="btn">Message on WhatsApp</button>
   </a>
 </div>
@@ -190,8 +200,12 @@
   <!-- Minified JS -->
   <script>
     function showTab(e,t){["makeup","academy"].forEach(e=>document.getElementById(e).style.display=e===t?"grid":"none");document.querySelectorAll(".portfolio-tabs button").forEach(e=>e.classList.remove("active")),e.currentTarget.classList.add("active")}
-    function toggleMenu(){const e=document.getElementById("nav-links");e.style.display=e.style.display==="flex"?"none":"flex"}
-	
+    // function toggleMenu(){const e=document.getElementById("nav-links");e.style.display=e.style.display==="flex"?"none":"flex"}
+
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("active");
+}
+
 	
   </script>
   <script>
